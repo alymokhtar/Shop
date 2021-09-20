@@ -1,0 +1,100 @@
+// Start Footer
+.footer {
+  padding-top: $main-padding;
+  .container {
+    display: flex;
+    @media #{$maxSmall} {
+      flex-direction: column;
+    }
+    .logo {
+      width: calc(100% / 3);
+      margin-right: 30px;
+      margin-top: 40px;
+      @media #{$maxSmall} {
+        width: 100%;
+        margin: 10px auto;
+        
+      }
+      h1 {
+        margin-bottom: 40px;
+      }
+      p {
+        color: $greyColor;
+      }
+      a {
+        text-decoration: none;
+        color: $greyColor;
+        &:hover {
+          i {
+            padding-left: 10px;
+            transition: 0.3s;
+            color: $mainColor;
+          }
+        }
+      }
+    }
+    .list {
+      width: calc(100% / 3);
+      @media #{$maxSmall} {
+        width: 100%;
+      }
+      .ls {
+        display: flex;
+        color: $greyColor;
+        font-size: 14px;
+        .useful-link {
+          li {
+            margin-bottom: 20px;
+            margin-right: 30px;
+            &:hover {
+              i {
+                padding-right: 10px;
+                transition: .3s;
+              }
+            }
+          }
+        }
+        .link {
+          li {
+            margin-bottom: 20px;
+            &:hover {
+              i {
+                padding-right: 10px;
+                transition: .3s;
+              }
+            }
+          }
+        }
+      }
+    }
+    .instagram {
+      width: calc(100% / 3);
+      @media #{$maxSmall} {
+        width: 100%;
+      }
+      .images {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+        grid-gap: 10px;
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+  .info {
+    padding-top: 20px;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .pay {
+        width: 30%;
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+// End Footer 

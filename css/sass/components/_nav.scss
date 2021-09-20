@@ -1,0 +1,34 @@
+// Start Navbar
+.nav {
+  .container {
+    ul {
+      display: flex;
+      justify-content: center;
+      padding: 20px 0;
+      i {
+        color: $greyColor;
+      }
+      li {
+        color: $greyColor;
+        text-transform: uppercase;
+        font-size: 12px;
+        &:not(:last-child){
+          margin-right: 15px;
+        }
+        @media #{$maxMobile} {
+          font-size: 10px;
+        }
+        &:hover {
+          color: $mainColor;
+          transition: .2s;
+          cursor: pointer;
+        }
+      }
+      .active {
+        color: $mainColor;
+        border-bottom: 1px solid $mainColor;
+      }
+    }
+  }
+}
+// ُEnd Navbar

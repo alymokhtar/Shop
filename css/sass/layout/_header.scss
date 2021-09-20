@@ -1,0 +1,40 @@
+.header{
+  padding: 10px 0 30px;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  color: $greyColor;
+  border-bottom: 1px solid #eee;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    .info {
+      i {
+        margin-right: 10px;
+        font-size: 20px;
+        &:hover {
+          color: $mainColor;
+          transition: $main-transition;
+        }
+      }
+      .fa-shopping-cart {
+        position: relative;
+        .cart {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #000;
+          color: #fff;
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          position: absolute;
+          top: -5px;
+          left: 15px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
